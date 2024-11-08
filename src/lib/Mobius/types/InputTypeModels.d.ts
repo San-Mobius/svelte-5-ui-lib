@@ -28,17 +28,8 @@ interface Props {
     theme?: themeTypes;
     customValidator?: () => void;
     isSmallTextVisible?: boolean;
-    setField?: (name: string, value: string)=> void;
+    // setField?: (name: string, value: string)=> void;
     required?: boolean;
-}
-
-interface InputProps extends Props {
-    inputType?: string; // Example specific prop for INPUT
-    placeholder?: string;
-}
-
-interface DropdownProps extends Props {
-    options: string[]; // Example specific prop for DROPDOWN
 }
 
 type FieldTypeProps = {

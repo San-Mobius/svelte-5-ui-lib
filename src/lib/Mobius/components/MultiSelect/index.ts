@@ -1,4 +1,5 @@
 import type { Snippet } from "svelte";
+
 export enum MultiSelectTypeProps{
     OUTLINE = "OUTLINE",
     CHECKBOX = "CHECKBOX",

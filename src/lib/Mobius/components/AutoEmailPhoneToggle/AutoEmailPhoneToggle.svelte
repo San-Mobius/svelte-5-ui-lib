@@ -1,6 +1,6 @@
 <script lang="ts">
     import { sineIn } from "svelte/easing";
-    import { ChevronDownOutline, EyeOutline } from "flowbite-svelte-icons";
+    import { ChevronDownOutline } from "flowbite-svelte-icons";
     import Dropdown from "$lib/dropdown/Dropdown.svelte";
     import DropdownUl from "$lib/dropdown/DropdownUl.svelte";
     import DropdownLi from "$lib/dropdown/DropdownLi.svelte";

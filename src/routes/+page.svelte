@@ -1,13 +1,14 @@
 <script lang="ts">
-  import { MultiSelectTypeProps, type MultiSelectProps, type MultiSelectType } from "$lib/MobiusComponents/MultiSelect";
-  import MultiSelect from "$lib/MobiusComponents/MultiSelect/MultiSelect.svelte";
   import { sineIn } from "svelte/easing";
   import { Button, Dropdown, DropdownUl, DropdownLi, uiHelpers } from "$lib";
+  
+  import { MultiSelectTypeProps, type MultiSelectProps, type MultiSelectType } from "$lib/Mobius/components/MultiSelect";
+  import MultiSelect from "$lib/Mobius/components/MultiSelect/MultiSelect.svelte";
 
   let dropdownAvatar = uiHelpers();
   let dropdownAvatarStatus = $state(false);
   let variantState = $state<MultiSelectType>(MultiSelectTypeProps.CHECKBOX)
-    
+
   let closeDropdownAvatar = dropdownAvatar.close;
   $effect(() => {
     dropdownAvatarStatus = dropdownAvatar.isOpen;

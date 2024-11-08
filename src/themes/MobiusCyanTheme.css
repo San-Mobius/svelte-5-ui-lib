@@ -1,8 +1,8 @@
 /* Define light theme variables */
 :root {
-    --primary-color: #4e46b4;
+    --primary-color: #eeedf3;
     --primary-dark-color: rgba(27, 26, 26, 0.712);
-    --secondry-color: #f3f2ff;
+    --secondry-color: #4e46b4;
     --green-color: #39bd3f;
     --red-color: #bb0f0f;
     --yellow-color: #e2e042;
@@ -32,6 +32,10 @@
 
 .pr-dark-bg-color {
 	background-color: var(--primary-dark-color);
+}
+
+.pr-border-color {
+	border-color: var(--primary-color);
 }
 
 .sc-color {

@@ -1,7 +1,7 @@
 import type { ButtonProps } from "$lib/buttons";
 import type { Snippet } from "svelte";
 
-type MultiSelectType = "OUTLINE" | "CHECKBOX" | "UPSELL";
+export type MultiSelectType = "OUTLINE" | "CHECKBOX" | "UPSELL";
 
 export type Option = {
     helperText?: string;

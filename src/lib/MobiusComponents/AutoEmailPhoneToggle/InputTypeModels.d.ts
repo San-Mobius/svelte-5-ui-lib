@@ -27,7 +27,8 @@ interface Props {
     };
     theme?: themeTypes;
     customValidator?: () => void;
-    isSmallTextVisible: boolean;
+    isSmallTextVisible?: boolean;
+    setField?: (name: string, value: string)=> void;
     required?: boolean;
 }
 

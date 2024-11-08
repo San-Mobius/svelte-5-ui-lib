@@ -1,20 +1,16 @@
 /* Define light theme variables */
 :root {
     --primary-color: #eeedf3;
-    --primary-dark-color: rgba(27, 26, 26, 0.712);
     --secondry-color: #4e46b4;
     --green-color: #39bd3f;
     --red-color: #bb0f0f;
     --yellow-color: #e2e042;
     --grey-color: gray;
-    --tw-ring-shadow: white !important;
-    --tw-ring-color: var(--primary-color) !important;
 }
 
 /* Dark theme variables */
 .dark {
     --primary-color: #1a1a1a; /* Example: Change primary color for dark mode */
-    --primary-dark-color: rgba(255, 255, 255, 0.8); /* Adjust dark mode primary color */
     --secondry-color: #2c2c2c;
     --green-color: #1e8f38;
     --red-color: #ff4747;
@@ -22,58 +18,74 @@
     --grey-color: #666666;
 }
 
-.pr-color {
-	color: var(--primary-color);
+.mobius-pr-color {
+    color: var(--primary-color);
 }
 
-.pr-bg-color {
-	background-color: var(--primary-color);
+.mobius-pr-bg-color {
+    background-color: var(--primary-color);
 }
 
-.pr-dark-bg-color {
-	background-color: var(--primary-dark-color);
+.mobius-pr-border-color {
+    border-color: var(--primary-color);
 }
 
-.pr-border-color {
-	border-color: var(--primary-color);
+.mobius-sc-color {
+    color: var(--secondry-color);
 }
 
-.sc-color {
-	color: var(--secondry-color);
+.mobius-sc-bg-color {
+    background-color: var(--secondry-color);
 }
 
-.sc-bg-color {
-	background-color: var(--secondry-color);
+.mobius-sc-border-color {
+    border-color: var(--secondry-color);
 }
 
-.green-color {
+.mobius-green-color {
 	color: var(--green-color);
 }
 
-.green-bg-color {
+.mobius-green-bg-color {
 	background-color: var(--green-color);
 }
 
-.red-color {
+.mobius-green-border-color {
+    border-color: var(--green-color);
+}
+
+.mobius-red-color {
 	color: var(--red-color);
 }
 
-.red-bg-color {
+.mobius-red-bg-color {
 	background-color: var(--red-color);
 }
 
-.yellow-color {
+.mobius-red-border-color {
+    border-color: var(--red-color);
+}
+
+.mobius-yellow-color {
 	color: var(--yellow-color);
 }
 
-.yellow-bg-color {
+.mobius-yellow-bg-color {
 	background-color: var(--yellow-color);
 }
 
-.grey-color {
+.mobius-yellow-border-color {
+    border-color: var(--yellow-color);
+}
+
+.mobius-grey-color {
 	color: var(--grey-color);
 }
 
-.grey-bg-color {
+.mobius-grey-bg-color {
 	background-color: var(--grey-color);
+}
+
+.mobius-grey-border-color {
+    border-color: var(--grey-color);
 }

@@ -1,12 +1,13 @@
 <script lang="ts">
-  import type { MultiSelectProps, MultiSelectType } from "$lib/MobiusComponents/MultiSelect";
+  import { MultiSelectTypeProps, type MultiSelectProps, type MultiSelectType } from "$lib/MobiusComponents/MultiSelect";
   import MultiSelect from "$lib/MobiusComponents/MultiSelect/MultiSelect.svelte";
   import { sineIn } from "svelte/easing";
   import { Button, Dropdown, DropdownUl, DropdownLi, uiHelpers } from "$lib";
 
   let dropdownAvatar = uiHelpers();
   let dropdownAvatarStatus = $state(false);
-  let variantState = $state<MultiSelectType>("OUTLINE")
+  let variantState = $state<MultiSelectType>(MultiSelectTypeProps.CHECKBOX)
+    
   let closeDropdownAvatar = dropdownAvatar.close;
   $effect(() => {
     dropdownAvatarStatus = dropdownAvatar.isOpen;
@@ -18,7 +19,7 @@
 
   let props : MultiSelectProps = $state({
       isSmallTextVisible: false,
-      variant: $state.snapshot(variantState),
+      variant: MultiSelectTypeProps.CHECKBOX,
       options: [
         {
           helperText: "HELPER TEXT",
@@ -70,7 +71,7 @@
       gap: 2
   })
 
-  const setVariant = (variant: MultiSelectType) => {
+  const setVariant = (variant: MultiSelectTypeProps) => {
     variantState = variant;
   }
 
@@ -84,17 +85,17 @@
     <Dropdown dropdownStatus={dropdownAvatarStatus} closeDropdown={closeDropdownAvatar} params={{ y: 0, duration: 200, easing: sineIn }} class="absolute -left-[130px] top-[50px] bg-slate-100">
   <DropdownUl>
         <DropdownLi>
-          <div  class='p-2 hover:bg-slate-200 cursor-pointer' onclick={() => setVariant("OUTLINE")}>
+          <div  class='p-2 hover:bg-slate-200 cursor-pointer' onclick={() => setVariant(MultiSelectTypeProps.OUTLINE)}>
             OUTLINE
           </div>
         </DropdownLi>
         <DropdownLi>
-          <div  class='p-2 hover:bg-slate-200 cursor-pointer' onclick={() => setVariant("UPSELL")}>
+          <div  class='p-2 hover:bg-slate-200 cursor-pointer' onclick={() => setVariant(MultiSelectTypeProps.UPSELL)}>
             UPSELL
           </div>
         </DropdownLi>
         <DropdownLi>
-          <div  class='p-2 hover:bg-slate-200 cursor-pointer' onclick={() => setVariant("CHECKBOX")}>
+          <div  class='p-2 hover:bg-slate-200 cursor-pointer' onclick={() => setVariant(MultiSelectTypeProps.CHECKBOX)}>
             CHECKBOX
           </div>
         </DropdownLi>

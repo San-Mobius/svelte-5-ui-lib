@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../app.pcss";
+  import "../app.css";
 
   import { Darkmode } from "$lib";
 

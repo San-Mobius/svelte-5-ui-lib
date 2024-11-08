@@ -32,7 +32,7 @@
   let selected: Array<any> = $state([]);
 </script>
 
-<div class="flex flex-wrap gap-{gap ?? 2}">
+<div class="flex flex-wrap gap-{gap ?? 2} pr-bg-color dark:pr-dark-bg-color">
   {#each options as option}
     <svelte:component this={MultiSelectTypeComponentMap[variant]} {handleSelection} {option} isChecked={checkValueIsPresent(option.value)} helperText={"HELPER Text"}></svelte:component>
   {/each}

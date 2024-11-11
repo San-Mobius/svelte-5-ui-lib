@@ -7,11 +7,11 @@ export enum Severity {
 }
 
 export const SeverityClassMapObject: {[key in Severity] : string} = {
-    [Severity.PRIMARY] : 'pr',
-    [Severity.SECONDARY] : 'sc',
-    [Severity.SUCCESS] : 'green',
-    [Severity.WARNING] : 'yellow',
-    [Severity.ERROR] : 'red',
+    [Severity.PRIMARY] : 'primary',
+    [Severity.SECONDARY] : 'secondary',
+    [Severity.SUCCESS] : 'success',
+    [Severity.WARNING] : 'warning',
+    [Severity.ERROR] : 'error',
 }
 
 export const getSeverityClass = (severity: Severity): string => {

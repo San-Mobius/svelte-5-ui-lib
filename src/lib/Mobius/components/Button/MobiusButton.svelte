@@ -9,16 +9,16 @@
   
   switch(variant) {
     case MobiusButtonVariants.LINK : 
-      buttonClass = `bg-transparent mobius-${severityClass}-color dark:mobius-${severityClass}-bg-color hover:bg-slate-50 focus:ring-0 dark:bg-blue-100`
+      buttonClass = `bg-transparent text-mobius_${severityClass} dark:bg-mobius_${severityClass} hover:bg-slate-50 focus:ring-0 dark:hover:bg-slate-900`
       break;
     case MobiusButtonVariants.OUTLINE:
-      buttonClass = `bg-transparent mobius-${severityClass}-color dark:mobius-${severityClass}-bg-color mobius-${severityClass}-border-color border hover:bg-slate-50 focus:ring-0`
+      buttonClass = `bg-transparent text-mobius_${severityClass} dark:text-mobius_${severityClass} border-mobius_${severityClass} border dark:bg-mobius_${severityClass} hover:bg-slate-50 dark:hover:bg-slate-900 focus:ring-0`;
       break;
     case MobiusButtonVariants.STANDARD:
-      buttonClass = `bg-transparent mobius-${severityClass}-bg-color text-white mobius-${severityClass}-border-color hover:bg-slate-50 focus:ring-0`
+      buttonClass = `bg-mobius_${severityClass} text-white border-mobius_${severityClass} hover:bg-slate-700 dark:hover:bg-slate-900 dark:bg-mobius_${severityClass} focus:ring-0`
       break;
     default:
-      buttonClass = `bg-transparent mobius-${severityClass}-bg-color text-white mobius-${severityClass}-border-color hover:bg-slate-50 focus:ring-0`
+      buttonClass = `bg-mobius_${severityClass} text-white border-mobius_${severityClass} hover:bg-slate-700 dark:hover:bg-slate-900 dark:bg-mobius_${severityClass} focus:ring-0`
   }
 
   if(appendClass) {

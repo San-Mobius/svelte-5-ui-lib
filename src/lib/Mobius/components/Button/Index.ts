@@ -1,6 +1,7 @@
 import type { ButtonProps } from "$lib/buttons";
 import type { Severity } from "$lib/Mobius/shared/common.util";
 import type { Props } from "$lib/Mobius/types/InputTypeModels";
+import type { Snippet } from "svelte";
 
 export enum MobiusButtonVariants {
     "OUTLINE" = "OUTLINE",
@@ -9,5 +10,7 @@ export enum MobiusButtonVariants {
 }
 export interface MobiusButtonProps extends ButtonProps, Props {
     variant: MobiusButtonVariants;
-    severity: Severity
+    severity: Severity;
+    leftIcon?: Snippet;
+    rightIcon?: Snippet;
 }

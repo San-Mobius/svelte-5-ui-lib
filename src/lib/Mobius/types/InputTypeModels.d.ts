@@ -28,8 +28,9 @@ export interface Props {
     theme?: themeTypes;
     customValidator?: () => void;
     isSmallTextVisible?: boolean;
-    // setField?: (name: string, value: string)=> void;
+    setField?: (name: string, value: string)=> void;
     required?: boolean;
+    appendClass?: string;
 }
 
 type FieldTypeProps = {

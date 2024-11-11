@@ -1,7 +1,7 @@
 /* Define light theme variables */
 :root {
     --primary-color: #eaf7ea;
-    --secondry-color: #39bd3f;
+    --secondary-color: #39bd3f;
     --green-color: #39bd3f;
     --red-color: #bb0f0f;
     --yellow-color: #e2e042;
@@ -11,7 +11,7 @@
 /* Dark theme variables */
 .dark {
     --primary-color: #1a1a1a; /* Example: Change primary color for dark mode */
-    --secondry-color: #2c2c2c;
+    --secondary-color: #2c2c2c;
     --green-color: #1e8f38;
     --red-color: #ff4747;
     --yellow-color: #d1c12f;
@@ -31,15 +31,15 @@
 }
 
 .mobius-sc-color {
-    color: var(--secondry-color);
+    color: var(--secondary-color);
 }
 
 .mobius-sc-bg-color {
-    background-color: var(--secondry-color);
+    background-color: var(--secondary-color);
 }
 
 .mobius-sc-border-color {
-    border-color: var(--secondry-color);
+    border-color: var(--secondary-color);
 }
 
 .mobius-green-color {

@@ -17,7 +17,7 @@ type Form = {
 
 type fieldTypes = "INPUT" | "DROPDOWN";
 
-interface Props {
+export interface Props {
     className?: string;
     containerClass?: string;
     helperText?: string;

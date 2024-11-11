@@ -4,6 +4,9 @@
   
   import { MultiSelectTypeProps, type MultiSelectProps, type MultiSelectType } from "$lib/Mobius/components/MultiSelect";
   import MultiSelect from "$lib/Mobius/components/MultiSelect/MultiSelect.svelte";
+  import MobiusButton from "$lib/Mobius/components/Button/MobiusButton.svelte";
+  import { MobiusButtonVariants } from "$lib/Mobius/components/Button/Index";
+  import { Severity } from "$lib/Mobius/shared/common.util";
 
   let dropdownAvatar = uiHelpers();
   let dropdownAvatarStatus = $state(false);
@@ -77,6 +80,10 @@
   }
 
 </script>
+
+<MobiusButton variant={MobiusButtonVariants.OUTLINE} severity={Severity.WARNING}>
+  Button
+</MobiusButton>
 
 <div class="flex ml-32  items-start justify-center">
   <Button onclick={dropdownAvatar.toggle} color="light" class="p-3">

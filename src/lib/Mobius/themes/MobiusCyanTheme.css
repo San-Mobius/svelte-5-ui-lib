@@ -1,8 +1,8 @@
 /* Define light theme variables */
 :root {
-    --primary-color: #eeedf3;
-    --secondry-color: #4e46b4;
-    --green-color: #39bd3f;
+    --primary-color: #1A56DB;
+    --secondry-color: #6B7280;
+    --green-color: #0E9F6E;
     --red-color: #bb0f0f;
     --yellow-color: #e2e042;
     --grey-color: gray;
@@ -13,7 +13,7 @@
     --primary-color: #1a1a1a; /* Example: Change primary color for dark mode */
     --secondry-color: #2c2c2c;
     --green-color: #1e8f38;
-    --red-color: #ff4747;
+    --red-color: #f5b9b9;
     --yellow-color: #d1c12f;
     --grey-color: #666666;
 }

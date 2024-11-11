@@ -1,25 +1,8 @@
-import Input from "./Input.svelte";
-import type { HTMLInputAttributes } from "svelte/elements";
-import type { FormSizeType, ColorName, SizeType } from "$lib/types";
-import type { Snippet } from "svelte";
-import { input } from "./theme";
+import type { InputProps } from "$lib/forms/input";
+import type { Severity } from "$lib/Mobius/shared/common.util";
+import type { Props } from "$lib/Mobius/types/InputTypeModels";
 
-type InputValue = string | number | string[] | undefined;
-interface InputProps<T extends InputValue = string> extends Omit<HTMLInputAttributes, "size" | "children" | "value"> {
-  children?: Snippet<[{ class: string } & Omit<InputProps<T>, "children" | "left" | "right" | "size">]>;
-  left?: Snippet;
-  right?: Snippet;
-  size?: FormSizeType;
-  value?: T;
-  clearable?: boolean;
-  color?: ColorName | "default" | "tinted";
-  classLeft?: string;
-  classRight?: string;
-  class?: string;
+
+export interface MobiusInputProps extends InputProps, Props{
+    severity: Severity;
 }
-
-function clampSize(s: SizeType) {
-  return s && s === "xs" ? "sm" : s === "xl" ? "lg" : s;
-}
-
-export { Input, input, type InputProps, type InputValue, clampSize };

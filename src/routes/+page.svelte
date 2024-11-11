@@ -8,6 +8,7 @@
   import { MobiusButtonVariants } from "$lib/Mobius/components/Button/Index";
   import { Severity } from "$lib/Mobius/shared/common.util";
   import MobiusCheckbox from "$lib/Mobius/components/Checkbox/MobiusCheckbox.svelte";
+  import MobiusInput from "$lib/Mobius/components/Input/MobiusInput.svelte";
 
   let dropdownAvatar = uiHelpers();
   let dropdownAvatarStatus = $state(false);
@@ -82,7 +83,7 @@
 
 </script>
 
-<MobiusButton variant={MobiusButtonVariants.LINK} severity={Severity.PRIMARY}>
+<MobiusButton variant={MobiusButtonVariants.STANDARD} severity={Severity.PRIMARY}>
   Button
 </MobiusButton>
 
@@ -120,4 +121,7 @@
 <div class="p-2">
   
   <MultiSelect {...props} />
+
+       
+  <MobiusInput severity={Severity.PRIMARY} />
 </div>

@@ -83,12 +83,6 @@
 
 </script>
 
-<MobiusButton variant={MobiusButtonVariants.STANDARD} severity={Severity.PRIMARY}>
-  Button
-</MobiusButton>
-
-<MobiusCheckbox severity={Severity.WARNING}></MobiusCheckbox>
-
 <div class="flex ml-32  items-start justify-center">
   <Button onclick={dropdownAvatar.toggle} color="light" class="p-3">
     variants
@@ -122,6 +116,9 @@
   
   <MultiSelect {...props} />
 
+  <MobiusButton variant={MobiusButtonVariants.STANDARD} severity={Severity.SUCCESS}>Button</MobiusButton>
+
+  <MobiusCheckbox severity={Severity.WARNING}>Label</MobiusCheckbox>
        
   <MobiusInput severity={Severity.PRIMARY} />
 </div>

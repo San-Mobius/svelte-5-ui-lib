@@ -7,6 +7,7 @@
   import MobiusButton from "$lib/Mobius/components/Button/MobiusButton.svelte";
   import { MobiusButtonVariants } from "$lib/Mobius/components/Button/Index";
   import { Severity } from "$lib/Mobius/shared/common.util";
+  import MobiusCheckbox from "$lib/Mobius/components/Checkbox/MobiusCheckbox.svelte";
 
   let dropdownAvatar = uiHelpers();
   let dropdownAvatarStatus = $state(false);
@@ -84,6 +85,8 @@
 <MobiusButton variant={MobiusButtonVariants.LINK} severity={Severity.PRIMARY}>
   Button
 </MobiusButton>
+
+<MobiusCheckbox severity={Severity.WARNING}></MobiusCheckbox>
 
 <div class="flex ml-32  items-start justify-center">
   <Button onclick={dropdownAvatar.toggle} color="light" class="p-3">

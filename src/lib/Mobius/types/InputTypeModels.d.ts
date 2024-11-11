@@ -17,17 +17,13 @@ type Form = {
 
 type fieldTypes = "INPUT" | "DROPDOWN";
 
-export interface Props {
-    className?: string;
-    containerClass?: string;
+export interface Props extends HTMLInputAttributes {
     helperText?: string;
     smallText?: {
         value: string;
         class: string;
     };
-    theme?: themeTypes;
     customValidator?: () => void;
-    isSmallTextVisible?: boolean;
     setField?: (name: string, value: string)=> void;
     required?: boolean;
     appendClass?: string;

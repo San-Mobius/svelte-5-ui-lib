@@ -9,7 +9,7 @@
   
   switch(variant) {
     case MobiusButtonVariants.LINK : 
-      buttonClass = `bg-transparent text-mobius_${severityClass} dark:bg-mobius_${severityClass} hover:bg-slate-50 focus:ring-0 dark:hover:bg-slate-900`
+      buttonClass = `bg-transparent text-mobius_${severityClass} dark:bg-mobius_${severityClass} hover:bg-slate-50 focus:ring-0 dark:hover:bg-slate-900 dark:text-white`
       break;
     case MobiusButtonVariants.OUTLINE:
       buttonClass = `bg-transparent text-mobius_${severityClass} dark:text-mobius_${severityClass} border-mobius_${severityClass} border dark:bg-mobius_${severityClass} hover:bg-slate-50 dark:hover:bg-slate-900 focus:ring-0`;

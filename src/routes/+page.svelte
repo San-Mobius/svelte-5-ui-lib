@@ -81,7 +81,7 @@
 
 </script>
 
-<MobiusButton variant={MobiusButtonVariants.OUTLINE} severity={Severity.WARNING}>
+<MobiusButton variant={MobiusButtonVariants.LINK} severity={Severity.PRIMARY}>
   Button
 </MobiusButton>
 

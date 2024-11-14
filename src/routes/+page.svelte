@@ -117,7 +117,9 @@
   <!-- {variantState} -->
   <!-- <MultiSelect {...props} /> -->
 
-  <MobiusButton variant={MobiusButtonVariants.LINK} severity={Severity.WARNING}>Upgrage Now</MobiusButton>
+  <!-- <button hx-get="www.google.com" hx-trigger="click[ctrlKey]">button</button> -->
+
+  <MobiusButton hx-get="/api/submit" hx-trigger="click[ctrlKey]" variant={MobiusButtonVariants.LINK} severity={Severity.WARNING}>Upgrage Now</MobiusButton>
 
   <!-- <MobiusCheckbox severity={Severity.WARNING}>Label</MobiusCheckbox> -->
        

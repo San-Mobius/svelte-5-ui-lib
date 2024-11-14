@@ -6,7 +6,7 @@
   const group: SizeType = getContext("group");
 
   let { children, pill = false, outline = false, size = group ? "sm" : "md", href, type = "button", color = group ? (outline ? "dark" : "alternative") : "primary", shadow = false, tag = "button", disabled, class: className, ...restProps }: Props = $props();
-
+  console.log(restProps)
   const base = $derived(button({ color, size, disabled, pill, group: !!group, outline, shadow, className }));
 </script>
 

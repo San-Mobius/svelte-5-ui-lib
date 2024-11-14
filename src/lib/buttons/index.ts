@@ -3,13 +3,14 @@ import GradientButton from "./GradientButton.svelte";
 import type { Snippet } from "svelte";
 import type { HTMLButtonAttributes, HTMLAnchorAttributes } from "svelte/elements";
 import { button, gradientButton } from "./theme";
+import { HTMX } from "$lib/types";
 
 type ButtonColorType = "primary" | "dark" | "alternative" | "light" | "secondary" | "gray" | "red" | "orange" | "amber" | "yellow" | "lime" | "green" | "emerald" | "teal" | "cyan" | "sky" | "blue" | "indigo" | "violet" | "purple" | "fuchsia" | "pink" | "rose";
 type ButtonSizeType = "sm" | "md" | "lg" | "xl" | "xs" | undefined;
 
 type HTMLAttributesWithoutAbort = Omit<HTMLButtonAttributes, "on:abort"> & Omit<HTMLAnchorAttributes, "on:abort">;
 
-interface ButtonProps extends HTMLAttributesWithoutAbort {
+interface ButtonProps extends HTMLAttributesWithoutAbort, HTMX{
   children: Snippet;
   pill?: boolean;
   outline?: boolean;

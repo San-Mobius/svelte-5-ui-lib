@@ -20,6 +20,9 @@ importers:
       flowbite-svelte-icons:
         specifier: ^2.0.2
         version: 2.0.2(svelte@5.1.9)(tailwind-merge@2.5.4)(tailwindcss@3.4.14)
+      htmx.org:
+        specifier: ^1.9.12
+        version: 1.9.12
       tailwind-merge:
         specifier: ^2.5.4
         version: 2.5.4
@@ -1285,6 +1288,9 @@ packages:
   highlight.js@11.10.0:
     resolution: {integrity: sha512-SYVnVFswQER+zu1laSya563s+F8VDGt7o35d4utbamowvUNLLMovFqwCLSocpZTz3MgaSRA1IbqRWZv97dtErQ==}
     engines: {node: '>=12.0.0'}
+
+  htmx.org@1.9.12:
+    resolution: {integrity: sha512-VZAohXyF7xPGS52IM8d1T1283y+X4D+Owf3qY1NZ9RuBypyu9l8cGsxUMAG5fEAb/DhT7rDoJ9Hpu5/HxFD3cw==}
 
   human-id@1.0.2:
     resolution: {integrity: sha512-UNopramDEhHJD+VR+ehk8rOslwSfByxPIZyJRfV739NDhN5LF1fa1MqnzKm2lGTQRjNrjK19Q5fhkgIfjlVUKw==}
@@ -3374,6 +3380,8 @@ snapshots:
       function-bind: 1.1.2
 
   highlight.js@11.10.0: {}
+
+  htmx.org@1.9.12: {}
 
   human-id@1.0.2: {}
 

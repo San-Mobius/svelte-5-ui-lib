@@ -94,6 +94,7 @@
     "apexcharts": "^3.54.1",
     "clsx": "^2.1.1",
     "flowbite-svelte-icons": "^2.0.2",
+    "htmx.org": "^1.9.12",
     "tailwind-merge": "^2.5.4",
     "tailwind-variants": "^0.2.1"
   },

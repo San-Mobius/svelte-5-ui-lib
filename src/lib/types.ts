@@ -109,3 +109,7 @@ export interface LinkType {
 export interface HTMXAttributes<T extends EventTarget> extends HTMLAttributes<T>{
   [key: `hx-${string}`]: string | number | boolean;
 }
+
+export interface HTMX {
+  [key: `hx-${string}`]: string | number | boolean;
+}

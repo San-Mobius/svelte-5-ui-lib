@@ -1,9 +1,9 @@
 import Secondary from "./Secondary.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { secondary } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
-interface SecondaryProps extends HTMLAttributes<HTMLElement> {
+interface SecondaryProps extends HTMXAttributes<HTMLElement> {
   children: Snippet;
   secondaryClass?: string;
   class?: string;

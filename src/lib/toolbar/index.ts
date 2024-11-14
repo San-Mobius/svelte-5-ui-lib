@@ -3,11 +3,11 @@ import ToolbarButton from "./ToolbarButton.svelte";
 import ToolbarGroup from "./ToolbarGroup.svelte";
 import { type Snippet } from "svelte";
 import { toolbar, toolbarGroup, toolbarButton } from "./theme";
-import type { HTMLAttributes } from "svelte/elements";
+import { HTMXAttributes } from "$lib/types";
 
 type ToolbarColor = "primary" | "secondary" | "default" | undefined;
 
-interface ToolbarProps extends HTMLAttributes<HTMLDivElement> {
+interface ToolbarProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   end?: Snippet;
   embedded?: boolean;
@@ -18,7 +18,7 @@ type SpacingType = "default" | "tight" | "loose" | undefined;
 type PaddingType = "default" | "none" | undefined;
 type PositionType = "first" | "last" | "middle" | undefined;
 
-interface ToolbarGroupProps extends HTMLAttributes<HTMLDivElement> {
+interface ToolbarGroupProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   class?: string;
   spacing?: SpacingType;

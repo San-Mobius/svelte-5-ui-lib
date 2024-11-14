@@ -1,11 +1,10 @@
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import Popover from "./Popover.svelte";
-import type { TransitionFunc, ParamsType } from "../types";
+import type { TransitionFunc, ParamsType, HTMXAttributes } from "../types";
 import { popover } from "./theme";
 
 type PopoverColorType = "default" | "primary" | "secondary" | "gray" | "red" | "orange" | "amber" | "yellow" | "lime" | "green" | "emerald" | "teal" | "cyan" | "sky" | "blue" | "indigo" | "violet" | "purple" | "fuchsia" | "pink" | "rose" | undefined;
-interface PopoverProps extends HTMLAttributes<HTMLDivElement> {
+interface PopoverProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   triggeredBy: string;
   titleSlot?: Snippet | string;

@@ -1,12 +1,12 @@
 import type { Snippet } from "svelte";
-import type { ParamsType, TransitionFunc } from "../types";
-import type { HTMLAttributes, HTMLAnchorAttributes } from "svelte/elements";
+import type { HTMXAttributes, ParamsType, TransitionFunc } from "../types";
+import type { HTMLAnchorAttributes } from "svelte/elements";
 import Badge from "./Badge.svelte";
 import { badge } from "./theme";
 
 type badgeColor = "primary" | "secondary" | "gray" | "red" | "orange" | "amber" | "yellow" | "lime" | "green" | "emerald" | "teal" | "cyan" | "sky" | "blue" | "indigo" | "violet" | "purple" | "fuchsia" | "pink" | "rose";
 
-interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
+interface BadgeProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   icon?: Snippet;
   badgeStatus?: boolean;

@@ -1,11 +1,11 @@
 import Progressbar from "./Progressbar.svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import type { EasingFunction } from "svelte/transition";
 import { progressbar } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 type ColorType = "primary" | "gray" | "red" | "orange" | "amber" | "yellow" | "lime" | "green" | "emerald" | "teal" | "cyan" | "sky" | "blue" | "indigo" | "violet" | "purple" | "fuchsia" | "pink" | "rose" | undefined;
 
-interface ProgressbarProps extends HTMLAttributes<HTMLDivElement> {
+interface ProgressbarProps extends HTMXAttributes<HTMLDivElement> {
   progress?: string | number;
   precision?: number;
   tweenDuration?: number;

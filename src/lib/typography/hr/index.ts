@@ -1,9 +1,9 @@
 import Hr from "./Hr.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { hr } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
-interface HrProps extends HTMLAttributes<HTMLElement> {
+interface HrProps extends HTMXAttributes<HTMLElement> {
   children?: Snippet;
   divClass?: string;
   hrClass?: string;

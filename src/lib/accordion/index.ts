@@ -2,8 +2,7 @@ import Accordion from "./Accordion.svelte";
 import AccordionItem from "./AccordionItem.svelte";
 import { type Writable } from "svelte/store";
 import type { Snippet } from "svelte";
-import type { ParamsType, TransitionFunc } from "../types";
-import type { HTMLAttributes } from "svelte/elements";
+import type { HTMXAttributes, ParamsType, TransitionFunc } from "../types";
 import { accordion, accordionitem } from "./theme";
 
 interface AccordionCtxType {
@@ -16,7 +15,7 @@ interface AccordionCtxType {
   isSingle?: boolean;
 }
 
-interface AccordionProps extends HTMLAttributes<HTMLDivElement> {
+interface AccordionProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   flush?: boolean;
   isSingle?: boolean;
@@ -27,7 +26,7 @@ interface AccordionProps extends HTMLAttributes<HTMLDivElement> {
   classInactive?: string;
 }
 
-interface AccordionItemProps extends HTMLAttributes<HTMLDivElement> {
+interface AccordionItemProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   header?: Snippet;
   arrowup?: Snippet;

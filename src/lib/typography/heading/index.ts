@@ -1,11 +1,11 @@
 import Heading from "./Heading.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { heading } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 type TagType = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | undefined;
 
-interface HeadingProps extends HTMLAttributes<HTMLElement> {
+interface HeadingProps extends HTMXAttributes<HTMLElement> {
   children: Snippet;
   tag?: TagType;
   class?: string;

@@ -17,7 +17,7 @@ type Form = {
 
 type fieldTypes = "INPUT" | "DROPDOWN";
 
-export interface Props extends HTMLInputAttributes {
+interface Props extends HTMLInputAttributes {
     helperText?: string;
     smallText?: {
         value: string;

@@ -1,13 +1,12 @@
 import Toast from "./Toast.svelte";
 import { toast } from "./theme";
 import type { Snippet } from "svelte";
-import type { ParamsType, TransitionFunc } from "../types";
-import type { HTMLAttributes } from "svelte/elements";
+import type { HTMXAttributes, ParamsType, TransitionFunc } from "../types";
 
 type ColorType = "primary" | "gray" | "red" | "yellow" | "green" | "indigo" | "purple" | "pink" | "blue" | "orange" | "amber" | "lime" | "emerald" | "teal" | "cyan" | "sky" | "violet" | "fuchsia" | "rose" | undefined;
 type PositionType = "top-left" | "top-right" | "bottom-left" | "bottom-right" | undefined;
 
-interface ToastProps extends HTMLAttributes<HTMLDivElement> {
+interface ToastProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   icon?: Snippet;
   toastStatus?: boolean;

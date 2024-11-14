@@ -1,7 +1,7 @@
 import Card from "./Card.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { card } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 // type CardSizeType = 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 type CardSizeType = "sm" | "md" | "lg" | "xl" | "xs" | undefined;
@@ -14,7 +14,7 @@ type ImgType = {
   alt: string | undefined | null;
 };
 
-interface CardProps extends HTMLAttributes<HTMLDivElement> {
+interface CardProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   href?: string;
   horizontal?: boolean;

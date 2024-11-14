@@ -1,10 +1,11 @@
 import type { Snippet } from "svelte";
-import type { HTMLAttributes, HTMLButtonAttributes } from "svelte/elements";
+import type { HTMLButtonAttributes } from "svelte/elements";
 import BottomNav from "./BottomNav.svelte";
 import BottomNavItem from "./BottomNavItem.svelte";
 import BottomNavHeaderItem from "./BottomNavHeaderItem.svelte";
 import BottomNavHeader from "./BottomNavHeader.svelte";
 import { bottomNav, bottomNavItem, bottomnavheader, bottomnavheaderitem } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 type BottomNavVariantType = "border" | "application" | "group" | "default" | "pagination" | "card" | "meeting" | "video" | undefined;
 type PositionType = "static" | "fixed" | "absolute" | "relative" | "sticky" | undefined;
@@ -13,7 +14,7 @@ type BottomNavContextType = {
 };
 
 type AppBtnPositionType = "middle" | "left" | "right" | undefined;
-interface BottomNavProps extends HTMLAttributes<HTMLDivElement> {
+interface BottomNavProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   header?: Snippet;
   activeUrl?: string;

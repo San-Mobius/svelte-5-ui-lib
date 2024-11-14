@@ -1,11 +1,12 @@
 import TabItem from "./TabItem.svelte";
 import Tabs from "./Tabs.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes, HTMLLiAttributes } from "svelte/elements";
+import type { HTMLLiAttributes } from "svelte/elements";
 import { type Writable } from "svelte/store";
 import { tabs, tabItem } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
-interface TabsProps extends HTMLAttributes<HTMLUListElement> {
+interface TabsProps extends HTMXAttributes<HTMLUListElement> {
   children: Snippet;
   tabStyle?: "full" | "pill" | "underline" | "none";
   ulClass?: string;

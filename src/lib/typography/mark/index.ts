@@ -1,9 +1,9 @@
 import Mark from "./Mark.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { mark } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
-interface MarkProps extends HTMLAttributes<HTMLElement> {
+interface MarkProps extends HTMXAttributes<HTMLElement> {
   children: Snippet;
   markClass?: string;
   class?: string;

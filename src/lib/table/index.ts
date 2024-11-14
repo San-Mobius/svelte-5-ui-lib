@@ -6,8 +6,9 @@ import TableHeadCell from "./TableHeadCell.svelte";
 import TableHead from "./TableHead.svelte";
 import TableSearch from "./TableSearch.svelte";
 import { table, tablebodyrow, tablehead, tablebodycell, tableheadcell } from "./theme";
-import type { HTMLTableAttributes, HTMLAttributes, HTMLTdAttributes, HTMLThAttributes } from "svelte/elements";
+import type { HTMLTableAttributes, HTMLTdAttributes, HTMLThAttributes } from "svelte/elements";
 import type { Snippet } from "svelte";
+import { HTMXAttributes } from "$lib/types";
 
 type TableCtxType = {
   striped?: boolean;
@@ -22,7 +23,7 @@ type HeadItemType = string | number | {
   [key: string]: string | number | boolean;
 };
 
-interface TableHeadProps extends HTMLAttributes<HTMLTableSectionElement> {
+interface TableHeadProps extends HTMXAttributes<HTMLTableSectionElement> {
   children?: Snippet;
   headerSlot?: Snippet;
   defaultRow?: boolean;
@@ -49,7 +50,7 @@ interface TableProps extends HTMLTableAttributes {
   tableItems?: TableItemType[];
 }
 
-interface TableBodyRowProps extends HTMLAttributes<HTMLTableRowElement> {
+interface TableBodyRowProps extends HTMXAttributes<HTMLTableRowElement> {
   children?: Snippet;
   class?: string;
   striped?: boolean;
@@ -67,7 +68,7 @@ interface TableBodyCellProps extends HTMLTdAttributes {
 
 type CellValue = string | number | boolean | null | undefined;
 type BodyRow = CellValue[] | Record<string, CellValue>;
-interface TableBodyProps extends HTMLAttributes<HTMLTableSectionElement> {
+interface TableBodyProps extends HTMXAttributes<HTMLTableSectionElement> {
   children?: Snippet;
   class?: string;
   bodyItems?: BodyRow[];

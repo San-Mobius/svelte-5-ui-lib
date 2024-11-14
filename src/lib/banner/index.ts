@@ -1,6 +1,5 @@
 import type { Snippet } from "svelte";
-import type { TransitionFunc } from "../types";
-import type { HTMLAttributes } from "svelte/elements";
+import type { HTMXAttributes, TransitionFunc } from "../types";
 import Banner from "./Banner.svelte";
 import { banner } from "./theme";
 
@@ -8,7 +7,7 @@ type ColorVariants = "primary" | "secondary" | "gray" | "red" | "orange" | "ambe
 type TypeVariants = "default" | "bottom" | "cta" | "signup" | "info";
 type PositionVariants = "static" | "fixed" | "absolute" | "relative" | "sticky";
 
-interface BannerProps extends HTMLAttributes<HTMLDivElement> {
+interface BannerProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   header?: Snippet;
   bannerStatus?: boolean;

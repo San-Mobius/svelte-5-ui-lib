@@ -8,8 +8,8 @@ import SidebarBrand from "./SidebarBrand.svelte";
 import { sidebar, sidebarbutton, sidebarcta, sitebarbrand, sidebardropdownwrapper } from "./theme";
 import { type Writable } from "svelte/store";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes, HTMLButtonAttributes, HTMLAnchorAttributes } from "svelte/elements";
-import type { TransitionFunc, ParamsType } from "../types";
+import type { HTMLButtonAttributes, HTMLAnchorAttributes } from "svelte/elements";
+import type { TransitionFunc, ParamsType, HTMXAttributes } from "../types";
 
 type SidebarCtxType = {
   closeSidebar?: () => void;
@@ -22,7 +22,7 @@ type SidebarCtxType = {
 type BreakpointType = "sm" | "md" | "lg" | "xl" | "2xl" | undefined;
 type PosisionType = "fixed" | "absolute" | "static" | undefined;
 
-interface SidebarProps extends HTMLAttributes<HTMLElement> {
+interface SidebarProps extends HTMXAttributes<HTMLElement> {
   children: Snippet;
   isOpen?: boolean;
   closeSidebar?: () => void;
@@ -44,7 +44,7 @@ interface SidebarButtonProps extends HTMLButtonAttributes {
   breakpoint?: BreakpointType;
 }
 
-interface SidebarCtaProps extends HTMLAttributes<HTMLDivElement> {
+interface SidebarCtaProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   icon?: Snippet;
   divClass?: string;
@@ -81,7 +81,7 @@ interface SidebarDropdownWrapperProps extends HTMLButtonAttributes {
   isSingle?: boolean;
 }
 
-interface SidebarGroupProps extends HTMLAttributes<HTMLUListElement> {
+interface SidebarGroupProps extends HTMXAttributes<HTMLUListElement> {
   children: Snippet;
   borderClass?: string;
   border?: boolean;

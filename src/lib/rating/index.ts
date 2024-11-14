@@ -8,7 +8,8 @@ import Star from "./Star.svelte";
 import Thumbup from "./Thumbup.svelte";
 import type { Snippet, Component } from "svelte";
 import { advancedrating, rating, review, scorerating } from "./theme";
-import type { SVGAttributes, HTMLAttributes } from "svelte/elements";
+import type { SVGAttributes } from "svelte/elements";
+import { HTMXAttributes } from "$lib/types";
 
 type RatingItem = { label: string | null | undefined; rating: number };
 
@@ -84,7 +85,7 @@ type ReviewType = {
   item3?: string;
 };
 
-interface ReviewProps extends HTMLAttributes<HTMLElement> {
+interface ReviewProps extends HTMXAttributes<HTMLElement> {
   children: Snippet;
   address?: Snippet;
   item1?: Snippet;

@@ -1,4 +1,3 @@
-import type { HTMLAttributes } from "svelte/elements";
 import CardPlaceholder from "./CardPlaceholder.svelte";
 import ImagePlaceholder from "./ImagePlaceholder.svelte";
 import ListPlaceholder from "./ListPlaceholder.svelte";
@@ -8,9 +7,10 @@ import TextPlaceholder from "./TextPlaceholder.svelte";
 import VideoPlaceholder from "./VideoPlaceholder.svelte";
 import WidgetPlaceholder from "./WidgetPlaceholder.svelte";
 import { cardPlaceholder, imagePlaceholder, listPlaceholder, skeleton, testimonialPlaceholder, textPlaceholder, videoPlaceholder, widgetPlaceholder } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 type CardSizeType = "sm" | "md" | "lg" | "xl" | "2xl" | undefined;
-interface CardPlaceholderProps extends HTMLAttributes<HTMLDivElement> {
+interface CardPlaceholderProps extends HTMXAttributes<HTMLDivElement> {
   size?: CardSizeType;
   class?: string;
 }
@@ -18,7 +18,7 @@ interface CardPlaceholderProps extends HTMLAttributes<HTMLDivElement> {
 type SizeImageType = "sm" | "md" | "lg" | undefined;
 type RoundedType = "sm" | "md" | "lg" | "none" | "full" | undefined;
 
-interface ImagePlaceholderProps extends HTMLAttributes<HTMLDivElement> {
+interface ImagePlaceholderProps extends HTMXAttributes<HTMLDivElement> {
   size?: SizeImageType;
   rounded?: RoundedType;
   class?: string;
@@ -27,7 +27,7 @@ interface ImagePlaceholderProps extends HTMLAttributes<HTMLDivElement> {
 type SizeListType = "sm" | "md" | "lg" | undefined;
 type RoundedListType = "sm" | "md" | "lg" | "none" | "full" | undefined;
 
-interface ListPlaceholderProps extends HTMLAttributes<HTMLDivElement> {
+interface ListPlaceholderProps extends HTMXAttributes<HTMLDivElement> {
   itemNumber?: number;
   size?: SizeListType;
   rounded?: RoundedListType;
@@ -36,20 +36,20 @@ interface ListPlaceholderProps extends HTMLAttributes<HTMLDivElement> {
 
 type SizeSkeletonType = "sm" | "md" | "lg" | "xl" | "2xl" | undefined;
 
-interface SkeletonProps extends HTMLAttributes<HTMLDivElement> {
+interface SkeletonProps extends HTMXAttributes<HTMLDivElement> {
   size?: SizeSkeletonType;
   class?: string;
 }
 
 type SizeTextType = "sm" | "md" | "lg" | "xl" | "2xl" | undefined;
 
-interface TextPlaceholderProps extends HTMLAttributes<HTMLDivElement> {
+interface TextPlaceholderProps extends HTMXAttributes<HTMLDivElement> {
   size?: SizeTextType;
 }
 
 type SizeVideoType = "sm" | "md" | "lg" | "xl" | "2xl" | undefined;
 
-interface VideoPlaceholderProps extends HTMLAttributes<HTMLDivElement> {
+interface VideoPlaceholderProps extends HTMXAttributes<HTMLDivElement> {
   size?: SizeVideoType;
 }
 

@@ -3,7 +3,7 @@
   import type { HTMLAttributes } from "svelte/elements";
   import { Heading } from "$lib";
   import { h1Cls } from "./theme";
-  interface Props extends HTMLAttributes<HTMLHeadingElement> {
+  interface Props extends HTMXAttributes<HTMLHeadingElement> {
     children: Snippet;
   }
   let { children, class: className }: Props = $props();

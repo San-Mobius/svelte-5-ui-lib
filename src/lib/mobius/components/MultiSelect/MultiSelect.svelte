@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { Component } from "svelte";
-  import type { MultiSelectProps, Option } from ".";
+  import type { MultiSelectChildProps, MultiSelectProps } from ".";
   import Outline from "./Outline.svelte";
   import CheckBox from "./CheckBox.svelte";
   import UpSell from "./UpSell.svelte";
@@ -13,9 +13,9 @@
     }
   };
 
-  let { isSmallTextVisible, variant, options, gap} : MultiSelectProps = $props();
+  let { variant, options, gap} : MultiSelectProps = $props();
 
-  const MultiSelectTypeComponentMap: { [key: string]: Component } = {
+  const MultiSelectTypeComponentMap: { [key: string]: Component<MultiSelectChildProps, {}, ''> } = {
     "OUTLINE": Outline,
     "CHECKBOX": CheckBox,
     "UPSELL": UpSell

@@ -1,13 +1,12 @@
 import Modal from "./Modal.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
-import type { TransitionFunc, ParamsType } from "../types";
+import type { TransitionFunc, ParamsType, HTMXAttributes } from "../types";
 import { modal } from "./theme";
 
 type WidthType = "md" | "sm" | "lg" | "xl" | "xs" | undefined;
 type PosisionType = "top-left" | "top-center" | "top-right" | "center-left" | "center" | "center-right" | "bottom-left" | "bottom-center" | "bottom-right" | "default" | undefined;
 
-interface ModalProps extends HTMLAttributes<HTMLDivElement> {
+interface ModalProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   header?: Snippet;
   footer?: Snippet;

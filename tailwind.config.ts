@@ -18,6 +18,7 @@ export default {
         mobius_success: 'var(--green-color)',
         mobius_warning: 'var(--yellow-color)',
         mobius_error: 'var(--red-color)',
+        mobius_basic: 'white'
       }
     }
   }

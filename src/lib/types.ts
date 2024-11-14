@@ -1,3 +1,4 @@
+import { HTMLAttributes } from "svelte/elements";
 import type { TransitionConfig, FadeParams, BlurParams, FlyParams, SlideParams, ScaleParams } from "svelte/transition";
 
 // primary, secondary, gray, red, orange, amber, yellow, lime, green, emerald, teal, cyan, sky, blue, indigo, violet, purple, fuchsia, pink, rose
@@ -103,4 +104,8 @@ export interface LinkType {
   rel?: string;
   active?: boolean;
   [propName: string]: any;
+}
+
+export interface HTMXAttributes<T extends EventTarget> extends HTMLAttributes<T>{
+  [key: `hx-${string}`]: string | number | boolean;
 }

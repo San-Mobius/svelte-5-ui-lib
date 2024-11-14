@@ -1,89 +1,89 @@
 <script lang="ts">
-  import { sineIn } from "svelte/easing";
-  import { Button, Dropdown, DropdownUl, DropdownLi, uiHelpers } from "$lib";
+  import { MobiusButton, MobiusButtonVariants, Severity } from "$lib";
+  // import { sineIn } from "svelte/easing";
   
-  import { MultiSelectTypeProps, type MultiSelectProps, type MultiSelectType } from "$lib/Mobius/components/MultiSelect";
-  import MultiSelect from "$lib/Mobius/components/MultiSelect/MultiSelect.svelte";
-  import MobiusButton from "$lib/Mobius/components/Button/MobiusButton.svelte";
-  import { MobiusButtonVariants } from "$lib/Mobius/components/Button/Index";
-  import { Severity } from "$lib/Mobius/shared/common.util";
-  import MobiusCheckbox from "$lib/Mobius/components/Checkbox/MobiusCheckbox.svelte";
-  import MobiusInput from "$lib/Mobius/components/Input/MobiusInput.svelte";
+  // import { MultiSelectTypeProps, type MultiSelectProps, type MultiSelectType } from "$lib/Mobius/components/MultiSelect";
+  // import MultiSelect from "$lib/Mobius/components/MultiSelect/MultiSelect.svelte";
+  // // import MobiusButton from "$lib/Mobius/components/Button/MobiusButton.svelte";
+  // import { Severity } from "$lib/Mobius/shared/common.util";
+  // import MobiusCheckbox from "$lib/Mobius/components/Checkbox/MobiusCheckbox.svelte";
+  // import MobiusInput from "$lib/Mobius/components/Input/MobiusInput.svelte";
+  // import MobiusFileUpload from "$lib/Mobius/components/FileUpload/MobiusFileUpload.svelte";
 
-  let dropdownAvatar = uiHelpers();
-  let dropdownAvatarStatus = $state(false);
-  let variantState = $state<MultiSelectType>(MultiSelectTypeProps.CHECKBOX)
+  // let dropdownAvatar = uiHelpers();
+  // let dropdownAvatarStatus = $state(false);
+  // let variantState = $state<MultiSelectType>(MultiSelectTypeProps.CHECKBOX)
 
-  let closeDropdownAvatar = dropdownAvatar.close;
-  $effect(() => {
-    dropdownAvatarStatus = dropdownAvatar.isOpen;
-  });
+  // let closeDropdownAvatar = dropdownAvatar.close;
+  // $effect(() => {
+  //   dropdownAvatarStatus = dropdownAvatar.isOpen;
+  // });
 
-  $effect(()=> {
-    props.variant = variantState
-  })
+  // $effect(()=> {
+  //   props.variant = variantState
+  // })
 
-  let props : MultiSelectProps = $state({
-      isSmallTextVisible: false,
-      variant: MultiSelectTypeProps.CHECKBOX,
-      options: [
-        {
-          helperText: "HELPER TEXT",
-          label: "LABEL",
-          value: 1,
-          imageSrc: "https://www.pngplay.com/wp-content/uploads/6/Avengers-Movie-Logo-Red-PNG.png",
-          buttonProps: {
-            label: "Select",
-            selectedLabel: "Selected"
-          }
-        },
-        {
-          helperText: "HELPER TEXT",
-          label: "LABEL",
-          value: 2,
-          buttonProps: {
-            label: "Select",
-            selectedLabel: "Selected"
-          }
-        },
-        {
-          helperText: "HELPER TEXT",
-          label: "LABEL",
-          value: 3,
-          buttonProps: {
-            label: "Select",
-            selectedLabel: "Selected"
-          }
-        },
-        {
-          helperText: "HELPER TEXT",
-          label: "LABEL",
-          value: 4,
-          buttonProps: {
-            label: "Select",
-            selectedLabel: "Selected"
-          }
-        },
-        {
-          helperText: "HELPER TEXT",
-          label: "LABEL",
-          value: 5,
-          buttonProps: {
-            label: "Select",
-            selectedLabel: "Selected"
-          }
-        }
-      ],
-      gap: 2
-  })
+  // let props : MultiSelectProps = $state({
+  //     isSmallTextVisible: false,
+  //     variant: MultiSelectTypeProps.CHECKBOX,
+  //     options: [
+  //       {
+  //         helperText: "HELPER TEXT",
+  //         label: "LABEL",
+  //         value: 1,
+  //         imageSrc: "https://www.pngplay.com/wp-content/uploads/6/Avengers-Movie-Logo-Red-PNG.png",
+  //         buttonProps: {
+  //           label: "Select",
+  //           selectedLabel: "Selected"
+  //         }
+  //       },
+  //       {
+  //         helperText: "HELPER TEXT",
+  //         label: "LABEL",
+  //         value: 2,
+  //         buttonProps: {
+  //           label: "Select",
+  //           selectedLabel: "Selected"
+  //         }
+  //       },
+  //       {
+  //         helperText: "HELPER TEXT",
+  //         label: "LABEL",
+  //         value: 3,
+  //         buttonProps: {
+  //           label: "Select",
+  //           selectedLabel: "Selected"
+  //         }
+  //       },
+  //       {
+  //         helperText: "HELPER TEXT",
+  //         label: "LABEL",
+  //         value: 4,
+  //         buttonProps: {
+  //           label: "Select",
+  //           selectedLabel: "Selected"
+  //         }
+  //       },
+  //       {
+  //         helperText: "HELPER TEXT",
+  //         label: "LABEL",
+  //         value: 5,
+  //         buttonProps: {
+  //           label: "Select",
+  //           selectedLabel: "Selected"
+  //         }
+  //       }
+  //     ],
+  //     gap: 2
+  // })
 
-  const setVariant = (variant: MultiSelectTypeProps) => {
-    variantState = variant;
-  }
-
+  // const setVariant = (variant: MultiSelectTypeProps) => {
+  //   variantState = variant;
+  // }
+  
 </script>
 
-<div class="flex ml-32  items-start justify-center">
+<!-- <div class="flex ml-32  items-start justify-center">
   <Button onclick={dropdownAvatar.toggle} color="light" class="p-3">
     variants
   </Button>
@@ -108,17 +108,18 @@
       </DropdownUl>
   </Dropdown>
   </div>
-</div>
+</div> -->
 
-{variantState}
-
-<div class="p-2">
+<div class="p-2 grid gap-2">
   
-  <MultiSelect {...props} />
+  <!-- <MobiusFileUpload /> -->
+  
+  <!-- {variantState} -->
+  <!-- <MultiSelect {...props} /> -->
 
-  <MobiusButton variant={MobiusButtonVariants.STANDARD} severity={Severity.SUCCESS}>Button</MobiusButton>
+  <MobiusButton variant={MobiusButtonVariants.LINK} severity={Severity.WARNING}>Upgrage Now</MobiusButton>
 
-  <MobiusCheckbox severity={Severity.WARNING}>Label</MobiusCheckbox>
+  <!-- <MobiusCheckbox severity={Severity.WARNING}>Label</MobiusCheckbox> -->
        
-  <MobiusInput severity={Severity.PRIMARY} />
+  <!-- <MobiusInput severity={Severity.PRIMARY} /> -->
 </div>

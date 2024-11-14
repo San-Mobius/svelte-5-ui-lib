@@ -1,7 +1,7 @@
 import P from "./P.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { paragraph } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 type PsizeType = "sm" | "lg" | "xl" | "2xl" | "xs" | "base" | "3xl" | "4xl" | "5xl" | "6xl" | "7xl" | "8xl" | "9xl" | undefined;
 type PweightType = "normal" | "thin" | "extralight" | "light" | "medium" | "semibold" | "bold" | "extrabold" | "black" | undefined;
@@ -10,7 +10,7 @@ type HeightType = "normal" | "tight" | "none" | "snug" | "relaxed" | "loose" | "
 type AlignType = "left" | "center" | "right" | undefined;
 type WhitespaceType = "normal" | "nowrap" | "pre" | "preline" | "prewrap" | undefined;
 
-interface ParagraphProps extends HTMLAttributes<HTMLParagraphElement> {
+interface ParagraphProps extends HTMXAttributes<HTMLParagraphElement> {
   children: Snippet;
   italic?: boolean;
   firstUpper?: boolean;

@@ -6,10 +6,10 @@ import DropdownHeader from "./DropdownHeader.svelte";
 import DropdownFooter from "./DropdownFooter.svelte";
 import { dropdown, dropdowndivider, dropdownli, dropdownul, dropdownHeader, dropdownFooter } from "./theme";
 import type { Snippet } from "svelte";
-import type { ParamsType, TransitionFunc } from "../types";
-import type { HTMLAttributes, HTMLAnchorAttributes } from "svelte/elements";
+import type { HTMXAttributes, ParamsType, TransitionFunc } from "../types";
+import type { HTMLAnchorAttributes } from "svelte/elements";
 
-interface DropdownProps extends HTMLAttributes<HTMLDivElement> {
+interface DropdownProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
   dropdownStatus: boolean;
   closeDropdown?: () => void;
@@ -22,15 +22,15 @@ interface DropdownProps extends HTMLAttributes<HTMLDivElement> {
   transition?: TransitionFunc;
 }
 
-interface DropdownDividerProps extends HTMLAttributes<HTMLDivElement> {
+interface DropdownDividerProps extends HTMXAttributes<HTMLDivElement> {
   class?: string;
 }
 
-interface DropdownHeaderProps extends HTMLAttributes<HTMLDivElement> {
+interface DropdownHeaderProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
 }
 
-interface DropdownFooterProps extends HTMLAttributes<HTMLDivElement> {
+interface DropdownFooterProps extends HTMXAttributes<HTMLDivElement> {
   children: Snippet;
 }
 
@@ -42,7 +42,7 @@ interface DropdownLiProps extends HTMLAnchorAttributes {
   liClass?: string;
 }
 
-interface DropdownUlProps extends HTMLAttributes<HTMLUListElement> {
+interface DropdownUlProps extends HTMXAttributes<HTMLUListElement> {
   children: Snippet;
 }
 

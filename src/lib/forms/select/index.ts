@@ -1,7 +1,8 @@
 import Select from "./Select.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLSelectAttributes, HTMLAttributes } from "svelte/elements";
+import type { HTMLSelectAttributes } from "svelte/elements";
 import { select } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
 type SelectSize = "sm" | "md" | "lg";
 
@@ -18,7 +19,7 @@ interface SelectProps<T> extends Omit<HTMLSelectAttributes, "size"> {
   placeholder?: string;
 }
 
-interface MultiSelectProps<T> extends HTMLAttributes<HTMLDivElement> {
+interface MultiSelectProps<T> extends HTMXAttributes<HTMLDivElement> {
   children?: Snippet;
   items?: SelectOptionType<T>[];
   value?: T[];

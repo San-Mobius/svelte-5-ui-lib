@@ -1,3 +1,4 @@
+import type { Props } from "$lib/mobius/types/InputTypeModels";
 import type { Snippet } from "svelte";
 
 export enum MultiSelectTypeProps{
@@ -21,7 +22,7 @@ export interface MultiSelectProps extends Props {
     gap: number;
 } 
 
-export interface MultiSelectChildProps {
+export interface MultiSelectChildProps extends Props {
     handleSelection: (e: MouseEvent)=> void;
     option: Option;
     isChecked: boolean;

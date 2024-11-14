@@ -3,9 +3,12 @@
   import { getSeverityClass } from "$lib/Mobius/shared/common.util";
   import type { MobiusCheckboxProps } from "./item";
 
-  const { severity, ...restProps } : MobiusCheckboxProps = $props();
+  const { severity, setField, ...restProps } : MobiusCheckboxProps = $props();
   let severityClass = getSeverityClass(severity);
 
+  const handleOnclick = () => {
+    if(setField) {}
+  }
 </script>
 
-<Checkbox { ...restProps } class={`focus:ring-0 text-mobius_${severityClass} dark:focus:ring-0`} >laebl</Checkbox>
+<Checkbox { ...restProps } class={`focus:ring-0 text-mobius_${severityClass} dark:focus:ring-0`} onchange={handleOnclick} />

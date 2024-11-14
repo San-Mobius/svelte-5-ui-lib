@@ -1,9 +1,10 @@
 import type { Snippet } from "svelte";
-import type { HTMLAttributes, HTMLAnchorAttributes } from "svelte/elements";
+import type { HTMLAnchorAttributes } from "svelte/elements";
 import Avatar from "./Avatar.svelte";
 import { avatar } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
-interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
+interface AvatarProps extends HTMXAttributes<HTMLDivElement> {
   children?: Snippet;
   href?: HTMLAnchorAttributes["href"];
   target?: HTMLAnchorAttributes["target"];

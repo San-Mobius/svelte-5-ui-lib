@@ -1,9 +1,9 @@
 import Layout from "./Layout.svelte";
 import type { Snippet } from "svelte";
-import type { HTMLAttributes } from "svelte/elements";
 import { layout } from "./theme";
+import { HTMXAttributes } from "$lib/types";
 
-interface LayoutProps extends HTMLAttributes<HTMLElement> {
+interface LayoutProps extends HTMXAttributes<HTMLElement> {
   children: Snippet;
 }
 

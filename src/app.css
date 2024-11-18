@@ -1,1 +1,2 @@
-@import "lib/mobius/themes/MobiusCyanTheme.css";
+@import 'lib/mobius/theme.css';
+/* @use DefaultCSS; */

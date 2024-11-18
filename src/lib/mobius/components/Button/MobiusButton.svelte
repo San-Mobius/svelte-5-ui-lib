@@ -1,11 +1,11 @@
 <script lang="ts">
   import Button from "$lib/buttons/Button.svelte";
-  import { getSeverityClass, Severity } from "$lib/mobius/shared";
+  import { getSeverityClass, Severity } from "$lib/mobius";
   import { MobiusButtonVariants, type MobiusButtonProps } from "./index"
   
   let {children, variant, severity = Severity.PRIMARY, appendClass, leftIcon, rightIcon, ...restProps}: MobiusButtonProps = $props()
   let severityClass = getSeverityClass(severity);
-  let buttonClass;
+  let buttonClass = $state('');
   
   switch(variant) {
     case MobiusButtonVariants.LINK : 

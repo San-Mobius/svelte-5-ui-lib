@@ -1,8 +1,8 @@
 import type { ButtonProps } from "$lib/buttons";
-import type { Props } from "$lib/mobius/types/InputTypeModels";
 import type { Snippet } from "svelte";
 import MobiusButton from './MobiusButton.svelte';
-import { Severity } from "$lib/mobius/shared";
+import { Severity } from "$lib/mobius";
+import { Props } from "$lib/mobius/types/InputTypeModels";
 
 enum MobiusButtonVariants {
     "OUTLINE" = "OUTLINE",

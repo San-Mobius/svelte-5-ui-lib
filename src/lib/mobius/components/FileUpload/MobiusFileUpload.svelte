@@ -1,6 +1,6 @@
 <script lang="ts">
   import Card from "$lib/cards/Card.svelte";
-  import { Severity } from "$lib/Mobius/shared/common.util";
+  import { Severity } from "$lib/mobius";
   // import { MobiusButtonVariants } from "../Button/Index";
   // import MobiusButton from "../Button/MobiusButton.svelte";
 

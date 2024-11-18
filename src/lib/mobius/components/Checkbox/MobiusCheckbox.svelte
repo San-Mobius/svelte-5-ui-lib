@@ -1,6 +1,6 @@
 <script lang="ts">
   import Checkbox from "$lib/forms/checkbox/Checkbox.svelte";
-  import { getSeverityClass } from "$lib/Mobius/shared/common.util";
+  import { getSeverityClass } from "$lib/mobius";
   import type { MobiusCheckboxProps } from "./item";
 
   const { severity, setField, ...restProps } : MobiusCheckboxProps = $props();

@@ -1,4 +1,4 @@
-// Make Sure Every default value is initialised in child component
+// Make Sure Every default value is initialized in child component
 
 type themeTypes = {
     defaultStyle ?: string;
@@ -25,7 +25,6 @@ export interface Props extends HTMLInputAttributes {
     };
     customValidator?: () => void;
     setField?: (name: string, value: string)=> void;
-    required?: boolean;
     appendClass?: string;
 }
 

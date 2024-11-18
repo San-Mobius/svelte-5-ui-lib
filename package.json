@@ -1,6 +1,6 @@
 {
   "name": "@vikram-components/mobius-component",
-  "version": "0.10.16",
+  "version": "0.10.23",
   "description": "Svelte 5 UI Lib is a UI library built from scratch to leverage Svelte 5's runes system, creating smooth, reactive components.",
   "license": "MIT",
   "main": "dist/index.js",
@@ -105,19 +105,10 @@
       "types": "./dist/index.d.ts",
       "svelte": "./dist/index.js"
     },
-    "./Accordion.svelte": {
-      "types": "./dist/accordion/Accordion.svelte.d.ts",
-      "svelte": "./dist/accordion/Accordion.svelte"
-    },
-    "./Accordions.svelte": {
-      "types": "./dist/accordions/Accordions.svelte.d.ts",
-      "svelte": "./dist/accordions/Accordions.svelte"
-    },
     "./MobiusButton.svelte": {
       "types": "./dist/mobius/components/Button/MobiusButton.svelte.d.ts",
       "svelte": "./dist/mobius/components/Button/MobiusButton.svelte"
     },
-    "./Utils.ts": "./dist/mobius/shared/index.d.ts",
     "./package.json": "./package.json"
   },
   "directories": {

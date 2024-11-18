@@ -1,5 +1,29 @@
 # Changelog
 
+## 0.10.4
+
+### Patch Changes
+
+- fix: remove unnecessary import
+
+## 0.10.3
+
+### Patch Changes
+
+- fix: Input.svelte without div class with no left or right
+
+## 0.10.2
+
+### Patch Changes
+
+- fix: Table headItems prop to be an array of HeadItemType
+
+## 0.10.1
+
+### Patch Changes
+
+- fix: Img, ImgEnhanced
+
 ## 0.10.0
 
 ### Minor Changes

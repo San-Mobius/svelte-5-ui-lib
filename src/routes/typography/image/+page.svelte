@@ -19,7 +19,11 @@
     eager: true
   }) as Record<string, string>;
 
-  const exampleArr = [{ name: "Retina ready", component: ExampleComponents.RetinaReady }];
+  const exampleArr = [
+    // { name: "Import ex", component: ExampleComponents.ImportEx },
+    { name: "Enhanced", component: ExampleComponents.Enhanced },
+    { name: "Retina ready", component: ExampleComponents.RetinaReady }
+  ];
   let selectedExample: string | number = $state(exampleArr[0].name);
   let svelteCode = $derived(getExampleFileName(selectedExample, exampleArr));
 
@@ -66,7 +70,7 @@
 
       const propsString = props.length > 0 ? props.map((prop) => `\n  ${prop}`).join("") + "\n" : "";
 
-      return `<Img${propsString}src='/images/examples/content-gallery-1.png'/>`;
+      return `<Img${propsString} src='/images/examples/content-gallery-1.png'/>`;
     })()
   );
   // for interactive builder
